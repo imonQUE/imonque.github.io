@@ -48,7 +48,7 @@ div {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
     
-	visibility: hidden !important;
+	visibility: visible!important;
     -webkit-transform-style: preserve-3d;
 }
 
@@ -67,7 +67,7 @@ div {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
     
-	visibility: hidden !important;	
+	visibility: visible!important;	
     -webkit-transform-style: preserve-3d;
 }
 
