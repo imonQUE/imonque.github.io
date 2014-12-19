@@ -1,6 +1,7 @@
                 /* PAGE/CONTENT, BACKGROUND */
+
 html {
-    font-family: 'helvetica neue', 'Raleway', 'helvetica', arial, sans-serif;
+    font-family: 'helvetica neue', 'Lato', 'helvetica', arial, sans-serif;
     font-weight: 100;
     color: #ffffff;
     letter-spacing: 1.5px;
@@ -9,7 +10,7 @@ html {
 }
 
 body {
-    background-color: #000;
+    background-color: #000000;
     
     /* Next lines keep margin away (and colours right)*/
     margin: 0em;
@@ -122,28 +123,10 @@ ul a {
 }  
 
 .quemini, .quemini2 {
+    content: url("onQUE Corner Logo.png");
     width: 100px;
     float: left;
-}
-
-.quemini {
-    content: url("onQUE Corner Logo.png");
-    
-    opacity:0.6;
-    filter:alpha(opacity=60); /* Old Browsers */
-}
-
-.quemini:hover {
-    opacity:1.0;
-    transition: opacity 0.08s linear;
-    -moz-transition: opacity 0.08s linear;
-    -webkit-transition: opacity 0.08s linear;
-    -o-transition: opacity 0.8s linear;
-    filter:alpha(opacity=100); /* Old Browsers */ 
-}
-
-.quemini2 {
-    content: url("onQUE Corner Logo.png");  
+    margin-top: 0.2em;
 }
 
 .Soundcloud {
@@ -157,19 +140,9 @@ ul a {
     float: right;
 }
 
-.Soundcloud:hover {
-    opacity:1.0;
-    transition: opacity 0.1s linear;
-    -moz-transition: opacity 0.1s linear;
-    -webkit-transition: opacity 0.1s linear;
-    -o-transition: opacity 0.1s linear;
-    filter:alpha(opacity=100); /* Old Browsers */ 
-}
 
 .Youtube {
     content: url(Youtube%20Icon.png);
-    opacity:0.6;
-    filter:alpha(opacity=60); /* Old Browsers */
     
     position: relative;
     bottom: 2.95em;
@@ -178,14 +151,19 @@ ul a {
     padding: 5px;
 }
 
-.Youtube:hover {
-    opacity:1.0;
-    transition: opacity 0.1s linear;
-    -moz-transition: opacity 0.1s linear;
-    -webkit-transition: opacity 0.1s linear;
-    -o-transition: opacity 0.1s linear;
-    filter:alpha(opacity=100); /* Old Browsers */ 
+.Soundcloud, .Youtube, .quemini {
+    opacity: .5;
+    transition: opacity .25s ease-out;
+    -moz-transition: opacity .25s ease-out;
+    -webkit-transition: opacity .25s ease-out;
+    -o-transition: opacity .25s ease-out;
+    outline: 1px solid transparent; /* MAKES TRANSITION SMOOTH!!! :D */
 }
+
+.Soundcloud:hover, .Youtube:hover, .quemini:hover {
+    opacity:1.0; 
+}
+
 
 .fadeline { 
     width: 100%;
