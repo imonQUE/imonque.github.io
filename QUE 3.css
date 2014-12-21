@@ -42,10 +42,20 @@ div {
 
 /*-------------------------------------------------------------------------------*/
                     /* ANIMATIONS */
+.animatedHalf {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+    
+	visibility: visible !important;
+}
 
 .animated1 {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-delay: 1.5s; /* Safari */
+          animation-delay: 1.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
     
@@ -55,15 +65,6 @@ div {
 .animated3 {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-    
-	visibility: visible !important;	
-}
-
-.animated8 {
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
     
