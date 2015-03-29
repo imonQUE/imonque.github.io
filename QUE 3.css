@@ -1,7 +1,7 @@
                 /* PAGE/CONTENT, BACKGROUND */
 
 html {
-    font-family: 'helvetica neue', 'Lato', 'helvetica', arial, sans-serif;
+    font-family: 'Helvetica Neue', 'Lato', 'helvetica', arial, sans-serif;
     font-weight: 100;
     color: #ffffff;
     letter-spacing: 1.5px;
@@ -158,7 +158,7 @@ ul a {
     -moz-transition: opacity .25s ease-out;
     -webkit-transition: opacity .25s ease-out;
     -o-transition: opacity .25s ease-out;
-    outline: 1px solid transparent; /* MAKES TRANSITION SMOOTH!!! :D */
+    outline: 1px solid transparent; /* MAKES TRANSITION SMOOTH! :D */
 }
 
 .Soundcloud:hover, .Youtube:hover, .quemini:hover {
@@ -170,8 +170,8 @@ ul a {
     width: 100%;
     position: relative;
     top: 20px;
-    display:block;
-    height:1px;
+    display: block;
+    height: 1px;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 600, from(#009999), to(#000)); 
 
 }
@@ -221,6 +221,28 @@ p {
     text-align: center;
     padding-top: 3em;
 }
+
+table {
+    margin-left: auto; 
+    margin-right: auto;
+    width: 80%;
+}
+
+.wallpapers img {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #006666;
+}
+
+.albumart img {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 80%;
+}
 /*-------------------------------------------------------------------------------*/
                     /* FOOTER */
 .footer {
@@ -231,4 +253,8 @@ p {
     color: #00ffff;   
     width: 100%;
     text-align: center;
+}
+
+#bottom {
+    position: relative;
 }
