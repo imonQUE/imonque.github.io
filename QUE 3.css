@@ -72,26 +72,26 @@ div {
 }
 
 .fadeIn {
-    -webkit-animation: fadein; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein; /* Firefox < 16 */
-        -ms-animation: fadein; /* Internet Explorer */
-         -o-animation: fadein; /* Opera < 12.1 */
-            animation: fadein;
+    -webkit-animation: fadeIn; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeIn; /* Firefox < 16 */
+        -ms-animation: fadeIn; /* Internet Explorer */
+         -o-animation: fadeIn; /* Opera < 12.1 */
+            animation: fadeIn;
 }
 
-@keyframes fadein {
+@keyframes fadeIn {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
 
 /* Firefox < 16 */
-@-moz-keyframes fadein {
+@-moz-keyframes fadeIn {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadeIn {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
