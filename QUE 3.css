@@ -72,11 +72,11 @@ div {
 }
 
 .fadeIn {
-    -webkit-animation: fadeIn; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadeIn; /* Firefox < 16 */
-        -ms-animation: fadeIn; /* Internet Explorer */
-         -o-animation: fadeIn; /* Opera < 12.1 */
-            animation: fadeIn;
+    -webkit-animation-name: fadeIn; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation-name: fadeIn; /* Firefox < 16 */
+        -ms-animation-name: fadeIn; /* Internet Explorer */
+         -o-animation-name: fadeIn; /* Opera < 12.1 */
+            animation-name: fadeIn;
 }
 
 @keyframes fadeIn {
