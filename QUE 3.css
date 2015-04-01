@@ -1,8 +1,8 @@
                 /* PAGE/CONTENT, BACKGROUND */
 
 html {
-    font-family: 'Helvetica Neue', 'Lato', 'helvetica', arial, sans-serif;
-    font-weight: 100;
+    font-family: 'Lato', 'helvetica', arial, sans-serif;
+    font-weight: 200;
     color: #ffffff;
     letter-spacing: 1.5px;
     text-align: center;
@@ -81,31 +81,31 @@ div {
 
 @keyframes fadeIn {
     from { opacity: 0; }
-    to   { opacity: 1; }
+    to   { opacity: 0.99; }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadeIn {
     from { opacity: 0; }
-    to   { opacity: 1; }
+    to   { opacity: 0.99; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadeIn {
     from { opacity: 0; }
-    to   { opacity: 1; }
+    to   { opacity: 0.99; }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 1; }
+    to   { opacity: 0.99; }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 1; }
+    to   { opacity: 0.99; }
 }
 
 /* fadeInDown ? fadeInUp? */
@@ -118,6 +118,8 @@ div {
 }
 
 ul a {
+    font-family: 'Helvetica Neue';
+    font-weight: 100;
     font-size: 1.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -235,7 +237,8 @@ h2 {
 }
 
 p {
-    line-height: 25px
+    font-family: 'Helvetica Neue', 'Helvetica';
+    line-height: 25px;
 }
 
 .queimage {
