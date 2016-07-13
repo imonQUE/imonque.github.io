@@ -1,0 +1,11 @@
+body {
+    background-color: #241200;
+}
+
+p {
+    /*color: #ff8000;*/
+    /*color: #80c9ff;*/
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 10px;
+}
