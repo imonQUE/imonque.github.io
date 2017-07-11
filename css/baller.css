@@ -18,6 +18,13 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    /* Decrease header font size for small screens */
+    .bg-1 h3 {
+        font-size: 18px;
+    }
+}
+
 .phat { /* Wide empty space */
     padding-top: 45px;
 }
@@ -83,7 +90,7 @@
     padding: 0.2em 0 0 0;    
 }
 #committeepage .title-down  {
-    padding: 1em 0 1em 0;    
+    padding: 0.5em 0 0.8em 0;    
 }
 
 

@@ -173,6 +173,13 @@ a:focus {
 .text section:not(:first-child) h2 { /* Created gap above each title, originally 1em */
 	padding: 1em 0 0 0;
 }
+#contactpage .text section h2 { 
+	padding: 0.5em 0 0 0;
+}
+#ticketspage .text section h2 { 
+	padding: 0.5em 0 0 0;
+}
+
 
 .title-up {
 	font-size: 0.365em;
@@ -286,8 +293,9 @@ a:focus {
 		text-align: justify;
 	}
 	.text section h2 {
-		font-size: 1.85em;
+		font-size: 2.5em; /* Originally 1.85em */
 	}
+
 	.text blockquote {
 		font-size: 1.45em;
 	}
