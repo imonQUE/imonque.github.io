@@ -1,0 +1,112 @@
+                /* Basically Just Navbar Stuff */
+
+.bg-1 {
+    padding-bottom: 8px;
+    color: white;
+    font-family: 'Lato';
+    text-align: center;
+}
+    
+@media screen and (max-width: 768px) {
+    /* For brand to be centred when in mobile view: */
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        margin-left: -140px !important; /* Might need adjusting */
+        display: block;
+    }
+}
+
+/* STICKY NAVBAR */
+.affix {
+    top: 0;
+    width: 100%;
+}
+
+.affix + .container-fluid {
+    padding-top: 130px;
+}
+
+/* LOOKS */
+.navbar {
+    position: relative;
+    
+    z-index: 1000 !important;
+    
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    letter-spacing: 4px;
+    
+    border-bottom: solid #f0f0f0 2px;
+}
+
+.navbar-brand {
+    font-family: 'Arizonia';
+    color: #000 !important;
+    letter-spacing: 0px;
+    font-size: 40px !important;
+    /*text-shadow: 4px 4px 0px rgba(0,0,0,0.1);*/
+    text-shadow: 2px 2px 0px #ffd800;
+    padding-left: 20px;
+   
+}
+
+/* BACK TO TOP */
+.back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
+    border-radius: 30px;
+    border-width: 1px;
+    background-color: white;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+
+/* 'text' class when not homepage */
+#committeepage .text {
+    text-align: center;
+}
+
+/* COLOUR SCHEME */
+#homepage .back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
+    color: #5232ff;
+    border-color: #5232ff;
+}
+#homepage .navbar {
+    border-top: solid #5232ff 2px;
+}
+#homepage .bg-1 {
+    background-color: #5232ff;
+}
+#homepage .title-up {
+    color: #5232ff;
+}
+/* #homepage a, a:hover, a:focus, a:active {
+    color: #9132ff;
+} */
+
+#committeepage .back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
+    color: #ff3381;
+    border-color: #ff335a;
+}
+#committeepage .navbar {
+    border-top: solid #ff335a 2px;
+}
+#committeepage .bg-1 {
+    background-color: #ff335a;
+}
+#committeepage .title-up {
+    color: #ff335a;
+}
+
+/*
+OLD PURPLE - #A232FF
+*/
+/*
+PURPLE/BLUE - #9132ff
+*/

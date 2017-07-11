@@ -1,0 +1,201 @@
+                /* Basically Just Navbar Stuff */
+
+.bg-1 {
+    padding-bottom: 0px;
+    color: white;
+    font-family: 'Lato', 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-top: 56px; /* Otherwise would be behind navbar */
+}
+    
+@media screen and (max-width: 768px) {
+    /* For brand to be centred when in mobile view: */
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        margin-left: -140px !important; /* Might need adjusting */
+        display: block;
+    }
+}
+
+.phat { /* Wide empty space */
+    padding-top: 45px;
+}
+
+/* LOOKS */
+.navbar {
+    padding-top: 7px;
+    padding-bottom: 8px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    letter-spacing: 4px;
+    
+    border-bottom: solid #b2b2b2 1px;
+    
+    -webkit-box-shadow: 0px 10px 75px -10px rgba(0,0,0,0.6);
+    -moz-box-shadow: -0px 10px 75px -10px rgba(0,0,0,0.6);
+    box-shadow: 0px 10px 75px -10px rgba(0,0,0,0.6);
+}
+
+.navbar-brand {
+    font-family: 'Arizonia', Georgia, 'Times New Roman', serif;
+    color: #000 !important;
+    letter-spacing: 0px;
+    font-size: 40px !important;
+    /*text-shadow: 4px 4px 0px rgba(0,0,0,0.1);*/
+    text-shadow: 2px 2px 0px #ffd800;
+    padding-left: 20px;
+   
+}
+
+/* BACK TO TOP */
+.back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
+    border-radius: 30px;
+    border-width: 1px;
+    background-color: white;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+
+/* 'text' class when not homepage */
+#committeepage .text {
+    text-align: center;
+}
+#committeepage .text section h2 {
+    text-align: center;
+}
+#committeepage .text blockquote {
+    text-align: center;
+}
+#committeepage .js-section {
+    width: 100%;
+    max-width: none;
+}
+#committeepage .text section h2  {
+    padding: 0 0 0 0;    
+}
+#committeepage .title-up  {
+    padding: 0.2em 0 0 0;    
+}
+#committeepage .title-down  {
+    padding: 1em 0 1em 0;    
+}
+
+
+#contactpage .text {
+    text-align: center;
+}
+#contactpage .text section h2 {
+    text-align: center;
+}
+#contactpage .text blockquote {
+    text-align: center;
+}
+#contactpage .js-section {
+    width: 100%;
+    max-width: none;
+}
+
+#ticketspage .text {
+    text-align: center;
+}
+#ticketspage .text section h2 {
+    text-align: center;
+}
+#ticketspage .text blockquote {
+    text-align: center;
+}
+#ticketspage .text section p {
+    margin: 0 0 0 0;
+}
+#ticketspage .js-section {
+    width: 100%;
+    max-width: none;
+}
+
+
+
+
+/* COLOUR SCHEME */
+#homepage .back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
+    color: #00f;
+    border-color: #00f;
+}
+#homepage .navbar {
+    border-top: solid #6565ff 2px;
+}
+#homepage .title-up {
+    color: #00f;
+}
+#homepage .bg-1 {
+    background-color: #006;
+}
+/* #homepage a, a:hover, a:focus, a:active {
+    color: #9132ff;
+} */
+
+
+#committeepage .back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
+    color: #00a7ff;
+    border-color: #00a7ff;
+}
+#committeepage .navbar {
+    border-top: solid #00a7ff 2px;
+}
+#committeepage .title-up {
+    color: #00a7ff;
+}
+#committeepage .bg-1 {
+    background-color: #00334e;
+}
+
+
+#contactpage .back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
+    color: #ff0031;
+    border-color: #ff0031;
+}
+#contactpage .navbar {
+    border-top: solid #ff0031 2px;
+}
+#contactpage .title-up {
+    color: #ff0031;
+}
+#contactpage .bg-1 {
+    background-color: #800020;
+}
+
+
+#ticketspage .back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
+    color: #8b00ff;
+    border-color: #8b00ff;
+}
+#ticketspage .navbar {
+    border-top: solid #8b00ff 2px;
+}
+#ticketspage .title-up {
+    color: #8b00ff;
+}
+#ticketspage .bg-1 {
+    background-color: #350062;
+}
+#ticketspage p a {
+    color: #8b00ff;
+    text-decoration: none;
+}
+#ticketspage p a:hover, a:focus, a:active {
+    color: #350062;
+    text-decoration: none;
+}
+
+/*
+OLD PURPLE - #A232FF
+OLD PURPLE/BLUE - #9132ff
+OLD BLUE = #5232ff
+
+RED - #ff335a
+*/
