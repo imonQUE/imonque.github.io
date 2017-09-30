@@ -97,7 +97,7 @@ animation:rainbow 2s infinite;
         left: 50%;
         margin-left: -95px !important; /* Might need adjusting */
         display: block;
-        padding-left: 90px; 
+        padding-left: 85px; 
     }
 }
 
@@ -145,7 +145,7 @@ animation:rainbow 2s infinite;
     font-size: 30px !important;
     /*text-shadow: 4px 4px 0px rgba(0,0,0,0.1);*/
     text-shadow: 1px 1px 0px #cbcbcb;
-    padding-left: 43px; 
+    padding-left: 45px; 
     /*
     font-weight: bold; */
 }
