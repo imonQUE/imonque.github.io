@@ -79,15 +79,15 @@ animation:rainbow 2s infinite;
 }
 
 #intropage {
-    background: repeat-y; 
+    background: repeat-y !important; 
 }    
    
 #committeepage {
-    background: repeat-y; 
+    background: repeat-y !important; 
 }    
 
 #contactpage {
-    background: repeat-y; 
+    background: repeat-y !important; 
 }    
     
 }
