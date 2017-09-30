@@ -95,9 +95,8 @@ animation:rainbow 2s infinite;
     .navbar-brand {
         position: absolute;
         left: 50%;
-        margin-left: -95px !important; /* Might need adjusting */
+        margin-left: -71px !important; /* Might need adjusting */
         display: block;
-        padding-left: 75px; 
     }
 }
 
@@ -145,7 +144,7 @@ animation:rainbow 2s infinite;
     font-size: 30px !important;
     /*text-shadow: 4px 4px 0px rgba(0,0,0,0.1);*/
     text-shadow: 1px 1px 0px #cbcbcb;
-    padding-left: 45px; 
+    padding-left: 20px; 
     /*
     font-weight: bold; */
 }
@@ -287,7 +286,7 @@ body {
 
 /* COLOUR SCHEME */ 
 #intropage {
-    background: url(/demo/img/europe_map_intro_washed.jpg) no-repeat center center fixed; 
+    background: url(/demo/img/europe_map_intro_washed.jpg) no-repeat /*center center*/ fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

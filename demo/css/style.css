@@ -309,5 +309,6 @@ a:focus {
     }
     #intropage .presents {
         margin-top: -20px;
+        line-height: 30px;
     }
 }
