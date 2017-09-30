@@ -77,19 +77,6 @@ animation:rainbow 2s infinite;
 	width: 100%;
 	height: 100%;
 }
-
-#intropage {
-    background: repeat-y !important; 
-}    
-   
-#committeepage {
-    background: repeat-y !important; 
-}    
-
-#contactpage {
-    background: repeat-y !important; 
-}    
-    
 }
 
 /* Basically Just Navbar Stuff */
