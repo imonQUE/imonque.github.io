@@ -1,4 +1,86 @@
-                /* Basically Just Navbar Stuff */
+/*This is coded CSS rainbow*/
+
+.rainbow:hover {
+-webkit-animation:rainbow 2s infinite;
+-ms-animation:rainbow 2s infinite;
+-o-animation:rainbow 2s infinite;
+animation:rainbow 2s infinite;
+}
+@-webkit-keyframes rainbow {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
+@-ms-keyframes rainbow {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
+@-o-keyframes rainbow {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
+@keyframes rainbow {
+0% {color: #ff0000;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #ff0080;}
+}
+
+/* Responsive Video */
+
+@media screen and (max-width: 720px) {
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+    left: 50%;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+    
+}
+
+/* Basically Just Navbar Stuff */
 
 .bg-1 {
     padding-bottom: 0px;
@@ -8,26 +90,36 @@
     margin-top: 56px; /* Otherwise would be behind navbar */
 }
     
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     /* For brand to be centred when in mobile view: */
     .navbar-brand {
         position: absolute;
         left: 50%;
-        margin-left: -140px !important; /* Might need adjusting */
+        margin-left: -95px !important; /* Might need adjusting */
         display: block;
+        padding-left: 90px; 
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
     /* Decrease header font size for small screens */
     .bg-1 h3 {
         font-size: 18px;
     }
 }
 
+.phit { /* Thin empty space */
+    padding-top: 20px;
+}
+
 .phat { /* Wide empty space */
     padding-top: 45px;
 }
+
+.phat2 { /* Wider empty space */
+    padding-top: 70px;
+}
+
 
 /* LOOKS */
 .navbar {
@@ -37,9 +129,9 @@
     border-radius: 0;
     margin-bottom: 0;
     font-size: 13px;
-    letter-spacing: 4px;
+    letter-spacing: 3px; /*4px;*/
     
-    border-bottom: solid #b2b2b2 1px;
+    /* border-bottom: solid white #b2b2b2 1px; */
     
     -webkit-box-shadow: 0px 10px 75px -10px rgba(0,0,0,0.6);
     -moz-box-shadow: -0px 10px 75px -10px rgba(0,0,0,0.6);
@@ -47,19 +139,34 @@
 }
 
 .navbar-brand {
-    font-family: 'Arizonia', Georgia, 'Times New Roman', serif;
-    color: #000 !important;
+    font-family: 'Lato', 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #2d87ff !important;
     letter-spacing: 0px;
-    font-size: 40px !important;
+    font-size: 30px !important;
     /*text-shadow: 4px 4px 0px rgba(0,0,0,0.1);*/
-    text-shadow: 2px 2px 0px #ffd800;
-    padding-left: 20px;
-   
+    text-shadow: 1px 1px 0px #cbcbcb;
+    padding-left: 45px; 
+    /*
+    font-weight: bold; */
 }
+
+/* Welcome Page Title */
+.special {
+    color: #d92a8f !important;
+    padding-bottom: 0em !important;
+}
+
+/* Background image
+body {
+    background-image: url('http://www.psdgraphics.com/file/crumpled-paper.jpg') !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+*/
 
 /* BACK TO TOP */
 .back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
-    border-radius: 30px;
+    border-radius: 50%; /* Need % not px to make circular */
     border-width: 1px;
     background-color: white;
     cursor: pointer;
@@ -67,9 +174,59 @@
     bottom: 10px;
     right: 10px;
     display: none;
+    
+    padding: 11px 14px 10px 15px;
 }
 
-/* 'text' class when not homepage */
+/* BEGIN Button */
+.button {
+  background: #2d87ff;
+    /*
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    */
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  border-width: 2px;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.button:hover {
+  background: #006dff;
+    /*
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    */
+  text-decoration: none;
+    color: white;
+}
+
+/* 'text' class when not journeypage */
+#intropage .text {
+    text-align: center;
+}
+#intropage .text section h2 {
+    text-align: center;
+}
+#intropage .text blockquote {
+    text-align: center;
+}
+#intropage .js-section {
+    width: 100%;
+    max-width: none;
+}
+
+
 #committeepage .text {
     text-align: center;
 }
@@ -128,74 +285,106 @@
 
 
 
-/* COLOUR SCHEME */
-#homepage .back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
-    color: #00f;
-    border-color: #00f;
+/* COLOUR SCHEME */ 
+#intropage {
+    background: url(/demo/img/europe_map_intro_washed.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-#homepage .navbar {
-    border-top: solid #6565ff 2px;
+
+#intropage .back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
+    color: #ff0031;
+    border-color: #ff0031;
 }
-#homepage .title-up {
-    color: #00f;
+#intropage .navbar {
+    border-top: solid #ff0031 1px;
 }
-#homepage .bg-1 {
-    background-color: #006;
+#intropage .title-up {
+    color: #ff0031;
 }
-/* #homepage a, a:hover, a:focus, a:active {
+#intropage .bg-1 {
+    background-color: #800020;
+}
+#intropage {
+    color: #00f !important;
+}
+
+
+
+#journeypage .back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
+    color: #2d87ff;
+    border-color: #2d87ff;
+}
+#journeypage .navbar {
+    border-top: solid #2d87ff 1px;
+}
+#journeypage .title-up {
+    color: #d92a8f;
+}
+#journeypage h3 {
+    color: #2d87ff;
+}
+/* #journeypage a, a:hover, a:focus, a:active {
     color: #9132ff;
 } */
 
 
+
+#committeepage {
+    background: url(/demo/img/front_quad.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 #committeepage .back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
-    color: #00a7ff;
-    border-color: #00a7ff;
+    color: #d92a8f;
+    border-color: #d92a8f;
 }
 #committeepage .navbar {
-    border-top: solid #00a7ff 2px;
+    border-top: solid #d92a8f 1px;
 }
 #committeepage .title-up {
-    color: #00a7ff;
-}
-#committeepage .bg-1 {
-    background-color: #00334e;
+    color: #2d87ff;
 }
 
 
-#contactpage .back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
-    color: #ff0031;
-    border-color: #ff0031;
+
+#contactpage {
+    background: url(/demo/img/postcards.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #contactpage .navbar {
-    border-top: solid #ff0031 2px;
+    border-top: solid #2d87ff 1px;
 }
 #contactpage .title-up {
-    color: #ff0031;
-}
-#contactpage .bg-1 {
-    background-color: #800020;
+    color: #d92a8f;
 }
 
-
-#ticketspage .back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active, .back-to-top:focus:active {
-    color: #8b00ff;
-    border-color: #8b00ff;
+#ticketspage {
+    background: url(/demo/img/tickets.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #ticketspage .navbar {
-    border-top: solid #8b00ff 2px;
+    border-top: solid #d92a8f 1px;
 }
 #ticketspage .title-up {
-    color: #8b00ff;
-}
-#ticketspage .bg-1 {
-    background-color: #350062;
+    color: #2d87ff;
 }
 #ticketspage p a {
-    color: #8b00ff;
+    color: #2d87ff;
     text-decoration: none;
 }
 #ticketspage p a:hover, a:focus, a:active {
-    color: #350062;
+    color: #d92a8f;
     text-decoration: none;
 }
 
@@ -205,4 +394,9 @@ OLD PURPLE/BLUE - #9132ff
 OLD BLUE = #5232ff
 
 RED - #ff335a
+
+OLD PINK/RED - #d6007b
+OLD LIGHT BLUE - #006dff
 */
+
+
