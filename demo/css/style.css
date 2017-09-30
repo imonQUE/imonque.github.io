@@ -191,7 +191,7 @@ a:focus {
 }
 
 .title-down {
-	font-family: Century Gothic,"Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura, Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif; /*I added cent gothic*/
+	font-family: Century Gothic,"Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura, sans-serif; /* Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif; */
 	font-size: 1.20em; /*Changed from 1.35em*/
 	font-weight: 400;
 	line-height: 0.9;
