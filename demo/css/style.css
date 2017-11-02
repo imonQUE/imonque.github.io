@@ -191,8 +191,8 @@ a:focus {
 }
 
 .title-down {
-	font-family: Century Gothic,"Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura, sans-serif; /* Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif; */
-	font-size: 1.20em; /*Changed from 1.35em*/
+	font-family: 'Edwardian Script ITC', Century Gothic,"Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura, sans-serif; /* Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif; */
+	font-size: 1.80em; /*Changed from 1.35em*/
 	font-weight: 400;
 	line-height: 0.9;
 	display: block;
@@ -278,6 +278,44 @@ a:focus {
 	margin: 10px 0;
 }
 
+@media (max-width: 860px) { /* Navbar collapses at 860px */
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+}
+
+@media (max-width: 880px) {
+    /*Added by Tom*/
+    #intropage img {
+    max-width: 90%;
+}
+}
+
 @media(max-width: 720px) { /* When width of screen smaller than 720px, run this */
 	.header-title {
 		font-size: 1.5em;
@@ -305,10 +343,20 @@ a:focus {
 	}
     /*Added by Tom*/
     .title-down {
-        font-size: 1em;
+        font-size: 1.7em;
+        margin-top: -30px;
     }
     #intropage .presents {
-        margin-top: -20px;
-        line-height: 30px;
+        padding-top: -90px;
+        line-height: 60px;
+        font-size: 1.3em;
     }
+    #intropage .title-up {
+        font-size: 0.3em;
+    }
+    .button {
+        font-size: 15px;
+        padding: 10px 10px 10px 10px;
+    }
+    
 }
