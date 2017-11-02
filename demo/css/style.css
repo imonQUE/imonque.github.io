@@ -315,6 +315,14 @@ a:focus {
         padding-bottom: 10px;
     }
     
+    /* For brand to be centred when in mobile view: */
+    .viatores {
+        position: absolute;
+        left: 50%;
+        margin-left: -65px !important; /* Might need adjusting */
+        display: block;
+    }
+    
 }
 
 @media (max-width: 880px) {

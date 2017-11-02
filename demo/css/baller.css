@@ -41,19 +41,10 @@
     text-align: center;
     margin-top: 56px; /* Otherwise would be behind navbar */
 }
-   /* 
-@media screen and (max-width: 767px) {
-    /* For brand to be centred when in mobile view: 
-    .navbar-brand .viatores {
-        position: absolute;
-        left: 50%;
-        margin-left: -75px !important; /* Might need adjusting 
-        display: block;
-    }
-}
+
 /*
 @media screen and (max-width: 850px) {
-    /* Decrease header font size for small screens 
+     Decrease header font size for small screens 
     .bg-1 h3 {
         font-size: 18px;
     }
@@ -311,7 +302,6 @@ LIGHT GREY - #e1dada
     color: #edc338; /*Sam #c86e6c*/
 }
 #journeypage .title-down {
-    font-family: 'Edwardian Script ITC', serif;
     font-size: 2em;
 }
 /* #journeypage a, a:hover, a:focus, a:active {
