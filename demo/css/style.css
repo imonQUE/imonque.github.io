@@ -319,7 +319,7 @@ a:focus {
     .viatores {
         position: absolute;
         left: 50%;
-        margin-left: -65px !important; /* Might need adjusting */
+        margin-left: -60px !important; /* Might need adjusting */
         display: block;
     }
     
