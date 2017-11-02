@@ -1,9 +1,17 @@
+<!--
 @font-face {
 	font-family: 'codropsicons';
 	font-weight: normal;
 	font-style: normal;
 	src: url('../fonts/codropsicons/codropsicons.eot');
 	src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('../fonts/codropsicons/codropsicons.woff') format('woff'), url('../fonts/codropsicons/codropsicons.ttf') format('truetype'), url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+-->
+@font-face {
+	font-family: 'Edwardian Script';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/edwardian_script_itc.ttf') format("truetype");
 }
 
 *,
@@ -191,7 +199,7 @@ a:focus {
 }
 
 .title-down {
-	font-family: 'Edwardian Script ITC', Century Gothic,"Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura, sans-serif; /* Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif; */
+	font-family: 'Edwardian Script', 'Edwardian Script ITC', serif, Century Gothic,"Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura, sans-serif; /* Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif; */
 	font-size: 1.80em; /*Changed from 1.35em*/
 	font-weight: 400;
 	line-height: 0.9;
