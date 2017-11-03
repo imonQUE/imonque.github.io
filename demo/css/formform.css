@@ -10,7 +10,8 @@ input[type="checkbox"], input[type="radio"] {
 }
 label[for="email"],
 label[for="fullname"],
-label[for="bod"]{
+label[for="bod"],
+label[for="ticketno"]{
   display: block;
   margin-bottom: 20px;
   font-size: 18px;

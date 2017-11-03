@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Student Tickets | Lincoln College Ball</title>
-	<meta name="description" content="A Journey through the Continent" />
-	<meta name="keywords" content="svg map, animated, path, journey, story, article, canvas, images, plane, web design" />
+	<meta name="description" content="Lincoln College Ball Committee Presents: Viatores - Journey through the Continent"/>
+	<meta name="keywords" content="lincoln, college, oxford, ball, 2018, viatores, europe, continent, barcelona, florence, istanbul, tickets, journey, may" />
 	<link rel="shortcut icon" href="favicon.ico">
     
     <!--Bootstrap-->
@@ -29,7 +29,37 @@
     
     <script>
         function redirect() {
-            window.location.assign("student_tickets_confirmed.html");
+            
+            
+            var x;
+    x = document.getElementById("email").value;
+    if (x == "") {
+        alert("Please enter an email address");
+        return false;
+            };
+            
+            var x;
+    x = document.getElementById("fullname").value;
+    if (x == "") {
+        alert("Please enter your name!");
+        return false;
+            };
+            
+            var x;
+    x = document.getElementById("bod").value;
+    if (x == "") {
+        alert("Please enter your Bod card number");
+        return false;
+            };
+            
+            var x;
+    x = document.getElementById("ticketno").value;
+    if (x == "") {
+        alert("Please enter the number of tickets you wish to purchase");
+        return false;
+            };
+            
+            window.location.assign("student_tickets_purchased.html");
         }
     </script>
     
@@ -77,22 +107,27 @@
             
 			<section class="js-section" data-zoom-start="2.5" data-zoom-middle="2">
                 <h2><span class="title-down">Current Lincoln Students</span></h2>
-				<h2><span class="title-up">Buying one ticket for the Lincoln College Ball 2018</span></h2>
-                <p>You will be charged £106 on your battels.</p>
+				<h2><span class="title-up">Buying tickets for the Lincoln College Ball 2018</span></h2>
+                <p style="margin-top: 15px;">You may buy as many tickets as you please.</p>
+                <p>You will be charged £106 per ticket on your battels.</p>
                 
                 <div class="phit"></div>
                 
                 <form  action="https://docs.google.com/forms/d/e/1FAIpQLSfgYG8W06V0dqssGLgWs-zcFpizhjxXP1tNeSOBUs-Wod9sDw/formResponse" target="no-target"> <!--no-target so doesn't redirect to google-->
-                <div class="phat"></div>
+                <div class="phit"></div>
                     <label for="email">Email Address</label>
       <input name="entry.27456620" type="text" id="email"/>
                     <div class="phit"></div>
                     <label for="fullname">Full Name</label>
       <input name="entry.1205464540" type="text" id="fullname"/>
                     <div class="phit"></div>
-                    <label for="bod">Bod Card Number </label>
+                    <label for="bod" style="margin-bottom: 0px;">Bod Card Number</label>
+                    <p style="margin-bottom: 10px;">(NB: This is the number on the bottom right of your Bod card, and begins with a 2)</p>
       <input name="entry.1407751157" type="text" id="bod"/>
-                    <p>(NB: This is the number on the bottom right of your Bod card, and begins with a 2)</p>
+                    <div class="phit"></div>
+                    <label for="ticketno">Number of Tickets</label>
+      <input name="entry.2061071485" type="text" id="ticketno"/>
+                    <div class="phit"></div>
                 
                     <!-- SUBMIT BUTTON -->
       <input class="button" type="submit" value="Submit" onclick="redirect()">
