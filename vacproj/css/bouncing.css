@@ -1,7 +1,7 @@
 .bouncing:hover {
   animation: bouncing 0.36s;
   animation-direction: alternate;
-  animation-timing-function: easeInOutQuart;
+  animation-timing-function: easeInOutQuad;
   animation-iteration-count: infinite;
 
 }
@@ -9,7 +9,7 @@
 .bouncing {
   animation: bouncing 0.36s;
   animation-direction: alternate;
-  animation-timing-function: easeInOutQuart;
+  animation-timing-function: easeInOutQuad;
   animation-iteration-count: 10;
 
 }
