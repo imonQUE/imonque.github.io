@@ -240,6 +240,12 @@ header.masthead p {
   }
 }
 
+@media (max-width: 768px) {
+  header.masthead {
+    background-image: url("../img/header.jpg");
+  }
+}
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -354,4 +360,17 @@ header.masthead p {
 .btn-primary:active, .btn-primary:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+
+
+
+
+.animatedhover {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+.animatedhover:hover {
+  animation-play-state: running;
 }

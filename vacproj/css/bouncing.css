@@ -1,0 +1,39 @@
+.bouncing:hover {
+  animation: bouncing 0.36s;
+  animation-direction: alternate;
+  animation-timing-function: easeInOutQuart;
+  animation-iteration-count: infinite;
+
+}
+
+.bouncing {
+  animation: bouncing 0.36s;
+  animation-direction: alternate;
+  animation-timing-function: easeInOutQuart;
+  animation-iteration-count: 10;
+
+}
+
+@keyframes bouncing {
+  from { transform: translate3d(0, 0px, 0);     }
+  to   { transform: translate3d(0, -20px, 0); }
+}
+
+/* Prefix Support 
+bouncing {
+  -webkit-animation-name: bouncing;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  -webkit-animation-iteration-count: infinite;
+    
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+@-webkit-keyframes bouncing {
+  from { -webkit-transform: translate3d(0, -20px, 0); transform: translate3d(0, -20px, 0); }
+  to   { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+}*/
+
+/*https://codeburst.io/tutorial-make-a-bouncing-ball-entirely-with-css-1e7e3c853a50*/
