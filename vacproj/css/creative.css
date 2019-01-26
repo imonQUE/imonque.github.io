@@ -211,6 +211,8 @@ img::-moz-selection {
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
     color: #f74843;
   }
+
+    
 }
 
 header.masthead {
@@ -248,6 +250,21 @@ header.masthead p {
   header.masthead h1 {
     font-size: 2.5rem !important;
   }
+
+}
+
+
+@media (max-width: 992px) {
+    
+  .big_image_1 {
+ margin-top: 30px;  
+ margin-bottom: -20px; 
+  }
+    
+  .big_image_2 {
+ margin-top: -20px; 
+ margin-bottom: 50px;  
+  } 
 }
 
 @media (min-width: 992px) {
