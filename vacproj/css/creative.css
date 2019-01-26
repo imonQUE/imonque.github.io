@@ -253,7 +253,6 @@ header.masthead p {
 
 }
 
-
 @media (max-width: 992px) {
     
   .big_image_1 {
@@ -263,7 +262,8 @@ header.masthead p {
     
   .big_image_2 {
  margin-top: -20px; 
- margin-bottom: 50px;  
+ margin-bottom: 50px;
+      width: 320px !important;
   } 
 }
 
